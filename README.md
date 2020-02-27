@@ -5,7 +5,8 @@ Stock Price Prediction using Convolutional and Recurrent Neural Networks on Kera
 - Russian Language [![Colab](https://camo.githubusercontent.com/52feade06f2fecbf006889a904d221e6a730c194/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667)](https://colab.research.google.com/github/tg-bomze/NeuralStockPredictor/blob/master/NeuralStockPredictor_Rus.ipynb)
 - Bad English Translation [![Colab](https://camo.githubusercontent.com/52feade06f2fecbf006889a904d221e6a730c194/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667)](https://colab.research.google.com/github/tg-bomze/NeuralStockPredictor/blob/master/NeuralStockPredictor_Eng.ipynb)
 
-**Description (bad English translation)**
+**Description (bad English translation):**
+
 The identification of patterns in the courses of instruments of financial markets allows you to build a model to predict their future movement. To make successful trading decisions, you need to use various methods and tools for analyzing time series.
 
 First, the stock price data of foreign companies (**Tesla, Google, Amazon, Facebook**) and Russian (**Gazprom, Sberbank, Rosneft, VTB**) were obtained. They contain observations on variables such as open, close, maximum and minimum, as well as trading volumes.
