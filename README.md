@@ -11,9 +11,9 @@ Stock Price Prediction using Convolutional and Recurrent Neural Networks on Kera
 
 The identification of patterns in the courses of instruments of financial markets allows you to build a model to predict their future movement. To make successful trading decisions, you need to use various methods and tools for analyzing time series.
 
-First, the stock price data of foreign companies (**Tesla, Google, Amazon, Facebook**) and Russian (**Gazprom, Sberbank, Rosneft, VTB**) were obtained. They contain observations on variables such as open, close, maximum and minimum, as well as trading volumes.
+First, the stock price data of foreign companies (**Tesla, Google, Amazon, Facebook**) and Russian (**Gazprom, Sberbank, Rosneft, VTB**) were obtained. They contain observations on variables such as open, close, maximum and minimum price, as well as trading volumes.
 
-The opening price itself is the previous closing price, however, because the stock market closes at the end of the trading session, when opening, due to insufficient demand for supply (or vice versa), a gap between prices arises, called a gap. He, in the future, was used by the neural network instead of the opening price.
+The opening price itself is the previous closing price, however, because the stock market closes at the end of the trading session, when opening, due to insufficient demand for supply (or vice versa), a gap between prices arises, called a **gap**. He, in the future, was used by the neural network instead of the opening price.
 
 The data of the maximum and minimum prices of the day were also replaced by their difference. For the most part, the basic information they give is how much the price changed in both directions during the formation of the candle.
 
@@ -23,7 +23,7 @@ The neural network architecture was a hybrid convolutional and recurrent, which 
 
 ![architecture](architecture.png)
 
-At the beginning, the input data array goes to the “Convolution” convolution layers and the “MaxPooling” union, which reduce its dimension. Then comes the “LSTM” recurrence layer, which allows you to store data in your memory for several iterations. Next, the Flatten anti-aliasing layer converts a two-dimensional data array into a one-dimensional one, after which the fully-connected “Dense” layer transfers data to the “Dropout” layer, which, by excluding a part of the data, protects the network from retraining. Further, after linear activation, we obtain forecast values at the output.
+At the beginning, the input data array goes to the “Convolution” convolution layers and the “MaxPooling” union, which reduce its dimension. Then comes the “LSTM” recurrence layer, which allows you to store data in your memory for several iterations. Next, the Flatten anti-aliasing layer converts a two-dimensional data array into a one-dimensional, after which the fully-connected “Dense” layer transfers data to the “Dropout” layer, which, by excluding a part of the data, protects the network from retraining. Further, after linear activation, we obtain forecast values at the output.
 
 After training the neural network, its accuracy was about **60%**, which indicates a very good forecasting quality.
 
@@ -33,3 +33,6 @@ In addition, a backtesting was carried out, which was an imitation of real tradi
 
 ![portfolio](portfolio.png)
 
+Over 10 months, our capital has stable increased by 25%.
+
+My scientific adviser [Kozlov Denis Yurievich](mailto:dyk.barnaul@gmail.com) also worked on this research.
