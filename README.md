@@ -36,4 +36,7 @@ In addition, a backtesting was carried out, which was an imitation of real tradi
 
 Over 10 months, our capital has stable increased by 25%.
 
+TODO
+- Upgrade with https://docs.anychart.com/Stock_Charts/Technical_Indicators/Mathematical_Description
+
 My scientific adviser [Kozlov Denis Yurievich](mailto:dyk.barnaul@gmail.com) also worked on this research.
